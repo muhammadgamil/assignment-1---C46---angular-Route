@@ -1,0 +1,13 @@
+section{
+  background-color: #1abc9c;
+}
+.divid{
+  width: 25%;
+  margin: auto;
+}
+.line{
+  height: 4px;
+  width: 30%;
+  background-color: white;
+}
+

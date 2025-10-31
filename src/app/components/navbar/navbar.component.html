@@ -1,0 +1,28 @@
+<nav [class.scrolled]="isScrolled" class="navbar navbar-expand-lg p-3 fixed-top">
+  <div class="container">
+    <a class="navbar-brand text-white fs-3 fw-bolder" routerLink="">START FRAMEWORK</a>
+    <button class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="true"
+    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link text-white fw-bold mx-1" routerLink="about" routerLinkActive=" bg rounded-3">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white fw-bold mx-1" routerLink="portfolio" routerLinkActive="bg rounded-3">PORTFOLIO </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white fw-bold mx-1" routerLink="contact" routerLinkActive="bg rounded-3">CONTACT </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>

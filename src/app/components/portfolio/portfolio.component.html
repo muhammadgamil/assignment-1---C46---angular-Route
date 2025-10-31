@@ -1,0 +1,35 @@
+<section>
+  <div class="container p-5">
+    <div class="header text-center mt-3 pt-3">
+      <h1>PORTFOLIO COMPONENT</h1>
+      <div class="lineStar d-flex align-items-center justify-content-center divid ">
+      <div class="flex-grow-0 border-2 border-white line ms-2 "></div>
+      <i class="fa-solid fa-star px-3 me-3"></i>
+      <div class="flex-grow-0 border-2 border-white line "></div>
+    </div>
+    </div>
+    <div class="row">
+      @for (img of images; track $index) {
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
+          <div class="imgCard overflow-hidden position-relative" (click)="openImg(img)">
+            <div class="inner p-3">
+              <img [src]="img" class="w-100 rounded-3" alt="img">
+            </div>
+            <div class="overlayer">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+  <div class="lightbox-container position-fixed top-0 end-0 start-0 bottom-0 justify-content-center align-items-center"
+        [style.display]="lightboxVisisble ? 'flex' : 'none' "
+        (click)="closeImg()">
+
+      <div class="lightbox-item" (click)="$event.stopPropagation()">
+        <img [src]="selectedImage" alt="">
+      </div>
+
+  </div>
+</section>
